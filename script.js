@@ -1,3 +1,4 @@
+// ===== PASSWORD PROTECTION =====
 const PASSWORD = "group32WOLF"; // CHANGE THIS
 
 function checkPassword() {
@@ -12,3 +13,15 @@ function checkPassword() {
     error.style.color = "red";
   }
 }
+
+// ===== CARD TOGGLE FUNCTION =====
+function toggleDetail(id) {
+  const detail = document.getElementById(id);
+  if (detail.classList.contains("hidden")) {
+    detail.classList.remove("hidden");
+    detail.scrollIntoView({ behavior: "smooth" });
+  } else {
+    detail.classList.add("hidden");
+  }
+}
+

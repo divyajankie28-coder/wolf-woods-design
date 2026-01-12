@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Wolf woods design</title>
+  <title>Wolf Woods Design</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,6 +18,17 @@
 
 <!-- MAIN CONTENT -->
 <div id="content" class="hidden">
+
+  <!-- COMPANY LOGO BANNER WITH TEXT -->
+  <!-- COMPANY LOGO BANNER WITH OVERLAY TEXT -->
+<section id="logo-banner">
+  <img src="images/banner.png" alt="Company Logo" class="company-logo">
+  <div class="logo-text">
+    <h4>Wolf Woods Design</h4>
+    <p>Redesigning the Heinz Ketchup Bottle</p>
+  </div>
+</section>
+
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
@@ -42,14 +53,23 @@
       <h1>Introduction</h1>
       <p>This project focuses on redesigning the Heinz ketchup bottle to improve usability and inclusivity.</p>
       <div class="cards-grid">
-        <div class="card">
-          <img src="images/project-goal.png" alt="Project Goal">
+        <div class="card" onclick="toggleDetail('intro-goal')">
+          <img src="images/goal image.jpg" alt="Project Goal" class="goal-logo">
           <h3>Project Goal</h3>
         </div>
-        <div class="card">
-          <img src="images/design-approach.png" alt="Design Approach">
+        <div class="card" onclick="toggleDetail('intro-approach')">
+          <img src="images/design aproach.webp" alt="Design Approach" class="approach-logo">
           <h3>Design Approach</h3>
         </div>
+      </div>
+
+      <div id="intro-goal" class="card-detail hidden">
+        <h2>Project Goal Details</h2>
+        <p>Explain your project goal here in detail.</p>
+      </div>
+      <div id="intro-approach" class="card-detail hidden">
+        <h2>Design Approach Details</h2>
+        <p>Explain your design approach here in detail.</p>
       </div>
     </section>
 
@@ -57,26 +77,48 @@
     <section id="usability">
       <h1>Bottle Usability</h1>
       <div class="cards-grid">
-        <div class="card">
-          <img src="images/material.png" alt="Material">
+        <div class="card" onclick="toggleDetail('material-detail')">
+          <img src="images/material.avif" alt="Material" class="material-logo">
           <h3>Material</h3>
         </div>
-        <div class="card">
-          <img src="images/cap-turn.png" alt="Turning the Cap">
+        <div class="card" onclick="toggleDetail('cap-turn-detail')">
+          <img src="images/turning cap.png" alt="Turning the Cap" class="cap-logo">
           <h3>Turning the Cap</h3>
         </div>
-        <div class="card">
-          <img src="images/opening-cap.png" alt="Opening Cap">
+        <div class="card" onclick="toggleDetail('opening-cap-detail')">
+          <img src="images/opening cap.png" alt="Opening Cap" class="opening-logo">
           <h3>Opening Cap</h3>
         </div>
-        <div class="card">
-          <img src="images/shape.png" alt="Bottle Shape">
+        <div class="card" onclick="toggleDetail('shape-detail')">
+          <img src="images/bottle shape.png" alt="Bottle Shape" class="shape-logo">
           <h3>Bottle Shape</h3>
         </div>
-        <div class="card">
-          <img src="images/peel.png" alt="Seal/Peel">
+        <div class="card" onclick="toggleDetail('peel-detail')">
+          <img src="images/peal.png" alt="Seal/Peel" class="peel-logo">
           <h3>Peel/Seal</h3>
         </div>
+      </div>
+
+      <!-- Details -->
+      <div id="material-detail" class="card-detail hidden">
+        <h2>Material Details</h2>
+        <p>Text about material usability.</p>
+      </div>
+      <div id="cap-turn-detail" class="card-detail hidden">
+        <h2>Turning the Cap Details</h2>
+        <p>Text about turning the cap.</p>
+      </div>
+      <div id="opening-cap-detail" class="card-detail hidden">
+        <h2>Opening Cap Details</h2>
+        <p>Text about opening the cap.</p>
+      </div>
+      <div id="shape-detail" class="card-detail hidden">
+        <h2>Bottle Shape Details</h2>
+        <p>Text about bottle shape usability.</p>
+      </div>
+      <div id="peel-detail" class="card-detail hidden">
+        <h2>Peel/Seal Details</h2>
+        <p>Text about peel/seal usability.</p>
       </div>
     </section>
 
@@ -95,18 +137,31 @@
     <section id="concepts">
       <h1>Concepts</h1>
       <div class="cards-grid">
-        <a href="#concept1" class="card">
-          <img src="images/concept1.png" alt="Concept 1">
+        <div class="card" onclick="toggleDetail('concept1-detail')">
+          <img src="images/concept1.png" alt="Concept 1" class="concept1-logo">
           <h3>Concept 1</h3>
-        </a>
-        <a href="#concept2" class="card">
-          <img src="images/concept2.png" alt="Concept 2">
+        </div>
+        <div class="card" onclick="toggleDetail('concept2-detail')">
+          <img src="images/concept2.png" alt="Concept 2" class="concept2-logo">
           <h3>Concept 2</h3>
-        </a>
-        <a href="#concept3" class="card">
-          <img src="images/concept3.png" alt="Concept 3">
+        </div>
+        <div class="card" onclick="toggleDetail('concept3-detail')">
+          <img src="images/concept3.png" alt="Concept 3" class="concept3-logo">
           <h3>Concept 3</h3>
-        </a>
+        </div>
+      </div>
+
+      <div id="concept1-detail" class="card-detail hidden">
+        <h2>Concept 1 Details</h2>
+        <p>Describe Concept 1 fully here.</p>
+      </div>
+      <div id="concept2-detail" class="card-detail hidden">
+        <h2>Concept 2 Details</h2>
+        <p>Describe Concept 2 fully here.</p>
+      </div>
+      <div id="concept3-detail" class="card-detail hidden">
+        <h2>Concept 3 Details</h2>
+        <p>Describe Concept 3 fully here.</p>
       </div>
     </section>
 
@@ -120,18 +175,31 @@
     <section id="realised">
       <h1>Realised Concept</h1>
       <div class="cards-grid">
-        <div class="card">
-          <img src="images/final-bottle.png" alt="Final Bottle">
+        <div class="card" onclick="toggleDetail('final-bottle-detail')">
+          <img src="images/final-bottle.png" alt="Final Bottle" class="final-logo">
           <h3>Final Bottle Design</h3>
         </div>
-        <div class="card">
-          <img src="images/simulation.png" alt="Simulation">
+        <div class="card" onclick="toggleDetail('simulation-detail')">
+          <img src="images/simulation.png" alt="Simulation" class="simulation-logo">
           <h3>Simulation</h3>
         </div>
-        <div class="card">
-          <img src="images/cost.png" alt="Cost Analysis">
+        <div class="card" onclick="toggleDetail('cost-detail')">
+          <img src="images/cost.png" alt="Cost Analysis" class="cost-logo">
           <h3>Cost Analysis</h3>
         </div>
+      </div>
+
+      <div id="final-bottle-detail" class="card-detail hidden">
+        <h2>Final Bottle Details</h2>
+        <p>Detailed description of the final bottle design.</p>
+      </div>
+      <div id="simulation-detail" class="card-detail hidden">
+        <h2>Simulation Details</h2>
+        <p>Describe simulation results or visuals here.</p>
+      </div>
+      <div id="cost-detail" class="card-detail hidden">
+        <h2>Cost Analysis Details</h2>
+        <p>Explain the cost analysis and materials used.</p>
       </div>
     </section>
 
@@ -153,3 +221,5 @@
 <script src="script.js"></script>
 </body>
 </html>
+
+
