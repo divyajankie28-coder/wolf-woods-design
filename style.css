@@ -80,8 +80,14 @@ body {
   margin: 0;
 }
 #logo-banner .logo-text p {
-  font-size: 1.2rem;
+  font-size: 1.8rem;
   margin-top: 10px;
+}
+#logo-banner .logo-text a {
+  font-size: 1.0rem;
+  margin-top: 10px;
+  color: #000000;
+  left: 50%;
 }
 
 
@@ -137,17 +143,25 @@ section p { font-size:1rem; margin-bottom:15px; }
 /* ===== INDIVIDUAL CARD IMAGE SIZES ===== */
 .goal-logo { width:35%; height:auto; margin:0 auto; display:block; object-fit:contain; }
 .approach-logo { width:40%; height:auto; margin:0 auto; display:block; object-fit:contain; }
-.material-logo { width:98%; height:auto; margin:0 auto; display:block; object-fit:contain; }
+.material-logo { width:45%; height:auto; margin:0 auto; display:block; object-fit:contain; }
 .cap-logo { width:85%; height:auto; margin:0 auto; display:block; object-fit:contain; }
 .opening-logo { width:90%; height:auto; margin:0 auto; display:block; object-fit:contain; }
 .shape-logo { width:50%; height:auto; margin:0 auto; display:block; object-fit:contain; }
 .peel-logo { width:80%; height:auto; margin:0 auto; display:block; object-fit:contain; }
-.concept1-logo { width:45%; height:auto; margin:0 auto; display:block; object-fit:contain; }
+.concept1-logo { width:55%; height:auto; margin:0 auto; display:block; object-fit:contain; }
 .concept2-logo { width:45%; height:auto; margin:0 auto; display:block; object-fit:contain; }
-.concept3-logo { width:45%; height:auto; margin:0 auto; display:block; object-fit:contain; }
+.concept3-logo { width:90%; height:auto; margin:0 auto; display:block; object-fit:contain; }
 .final-logo { width:40%; height:auto; margin:0 auto; display:block; object-fit:contain; }
 .simulation-logo { width:45%; height:auto; margin:0 auto; display:block; object-fit:contain; }
-.cost-logo { width:35%; height:auto; margin:0 auto; display:block; object-fit:contain; }
+.cost-logo { width:45%; height:auto; margin:0 auto; display:block; object-fit:contain; }
+.stakeholder-logo {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+}
+
 
 /* ===== CARD DETAILS ===== */
 .card-detail {
@@ -177,3 +191,69 @@ section p { font-size:1rem; margin-bottom:15px; }
   #password-screen input { width:80%; }
   .cards-grid { gap:15px; }
 }
+
+.site-footer {
+  background: #1a2716;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 60px;
+}
+
+.site-footer strong {
+  color: #fff;
+}
+
+details summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #1a2716;
+    margin: 0.5rem 0;
+}
+
+details summary:hover {
+    text-decoration: underline;
+}
+
+details p {
+    margin-left: 1rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+table th {
+    font-weight: 600;
+    background-color: #f5f5f5;
+}
+figure {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+figure img {
+    max-width: 60%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    color: #555;
+}
+
+details summary a {
+    color: inherit;
+    text-decoration: underline;
+}
+
